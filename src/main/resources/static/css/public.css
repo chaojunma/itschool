@@ -242,25 +242,3 @@ input[type=button]:hover{
 	color:red
 }
 
-
-.btn{
-	background: #84afe9;
-	outline: none;
-}
-
-.btn-success {
-	background: #84afe9;
-	outline: none;
-}
-
-
-.btn-success:hover {
-	background: #84afe9;
-	outline: none;
-}
-
-
-.btn-success:hover, .open>.dropdown-toggle.btn-success {
-    color: #fff;
-    background-color: #84afe9;
-}
