@@ -1,0 +1,173 @@
+@CHARSET "UTF-8";
+
+.main{
+	width: 1200px;
+	height:auto;
+	margin: 0 auto;
+}
+
+
+.main .leftC{
+	width: 800px;
+	height: auto;
+	float: left;
+}
+
+
+.main .rightC{
+	width: 400px;
+	height: 200px;
+	float: left;
+}
+
+
+.rightC .ask{
+	width: 300px;
+	height: 40px;
+	line-height:40px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 40px;
+	background-color: #15B393;
+	color: #fff;
+}
+
+.rightC span{
+	display:block;
+	width: 300px;
+	height: 50px;
+	line-height:50px;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-size: 20px;
+	padding-left:20px;
+	border-bottom: solid 1.5px #ddd;
+}
+
+.rightC .hot{
+	width: 300px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+
+.hot span{
+	font-size: 14px;
+	border-bottom: dashed 1.5px #ddd;
+	padding: 0px;
+	height: 60px;
+	line-height: 60px;
+	margin: 0;
+}
+
+
+.faq-line{
+	width: 800px;
+	margin: 0 auto;
+	padding-top:50px;
+}
+
+.faq-menu{
+	display:block;
+	font-size: 18px;
+	width:100px;
+	height:40px;
+	line-height:40px;
+	border-bottom:1.5px #ddd solid;
+	text-align: center;
+	float: left;
+}
+
+.faq-line .right{
+	width: 500px;
+	height:40px;
+	float: left;
+	border-bottom:1.5px #ddd solid;
+}
+
+
+.current{
+	color: #55B928;
+	border-bottom: 1.5px #55B928 solid;
+}
+
+.faq{
+	width: 800px;
+	height: 150px;
+	margin:0 auto;
+	border-bottom:1.5px solid #ddd;
+	margin-top: 50px;
+	float: left;
+}
+
+
+.leftC .tc{
+	width: 800px;
+	height:50px;
+	margin:0 auto;
+	margin-top: 30px;
+	float: left;
+	margin-bottom: 200px;
+}
+
+
+.faq .left{
+	width: 60px;
+	height: 60px;
+	border: 1px solid #55B928;
+	float: left;
+	border-radius:50%;
+	vertical-align: middle;
+	margin:45px 20px;
+}
+
+.faq img{
+	width: 60px;
+	height: 60px;
+}
+
+.faq .middle{
+	width: 500px;
+	height: 150px;
+	padding-left: 30px;
+	display: table-cell;
+	vertical-align: middle;
+	float: left;
+}
+
+
+.middle span{
+	width: 350px;
+	height: 40px;
+	line-height:40px;
+	display: inline-block;
+	padding-left: 30px;
+}
+
+
+.faq .right{
+	height: 150px;
+	width:200px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.right span{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	line-height:25px;
+	text-align: center;
+	margin-left: 20px;
+}
+
+
+/*版权部分*/
+.footer{
+	height: 140px;
+	padding-top: 1px;
+	margin-top: 100px;
+	clear: both;
+}

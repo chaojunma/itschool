@@ -1,0 +1,17 @@
+
+#no-border{
+	border:none;
+}
+
+
+.map{
+	width: 100%;
+	height: 30px;
+	overflow: hidden;
+	line-height: 39px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.map a{
+	font-size: 14px;
+}
