@@ -15,7 +15,7 @@ a{
 	vertical-align: middle;
 }
 a:hover{
-	color: #55B928;
+	color: #84afe9;
 }
 ul{
 	list-style: none;
@@ -73,7 +73,7 @@ img{
 .author span{
 	float: left;
 	font-size: 14px;
-	color: #5fb41b;
+	color: #15B393;
 }
 .author .buy{
 	color: red;
@@ -89,7 +89,7 @@ img{
 	color: #999;
 }
 .author a:hover{
-	 color:#188eee;
+	 color:#84afe9;
 }
 
 
@@ -202,7 +202,7 @@ input[type=button]:hover{
 }
 
 .menu span{
-	color:#55B928;
+	color:#E1EDF5;
 	padding-right: 5px;
 }
 
@@ -240,4 +240,27 @@ input[type=button]:hover{
 
 .must{
 	color:red
+}
+
+
+.btn{
+	background: #84afe9;
+	outline: none;
+}
+
+.btn-success {
+	background: #84afe9;
+	outline: none;
+}
+
+
+.btn-success:hover {
+	background: #84afe9;
+	outline: none;
+}
+
+
+.btn-success:hover, .open>.dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #84afe9;
 }

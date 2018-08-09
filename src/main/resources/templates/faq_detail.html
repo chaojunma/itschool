@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>问答详情</title>
+<link rel="stylesheet" href="/css/faq.css">
+<link rel="stylesheet" href="/css/pagination.css"/>
+<script src="/js/jquery.js"></script>
+</head>
+<body>
+	#include("header.html")
+	
+	<div class="main">
+		<div class="leftC">
+			<div class="title">
+				SpringBoot使用Enjoy模板自定义标签时问题
+			</div>
+			<div class="content">
+				如题，使用enjoy模板时，自定义标签，页面动态给标签方法传递参数时候遇到点问题，请教大家帮忙解答一下。
+				现在我获取到了一张表明，现在我要通过这张表名来获取所有字段名，并且把他们放到数组里面供我使用，该怎么做？
+				<div style="text-indent: 0;">
+					<span>
+						<i class="glyphicon glyphicon-time" style="color:#E1EDF5;"></i> 2018-8-8 11:47:00
+						<i class="glyphicon glyphicon-user" style="color:#E1EDF5;padding-left: 20px;"></i> Mark
+					</span>
+				</div>
+			</div>
+			
+			<div class="public">
+				<span>发表评论</span>
+				<textarea placeholder="写下你的评论..."></textarea>
+				<a>发送</a>
+			</div>
+			
+			<div class="comment">
+				<div class="tit">最新评论</div>
+				<div class="auth left">
+					<img alt="头像" src="/img/userinfo.png"/>
+					<p>DR153...</p>
+				</div>
+				<!-- 评论内容 -->
+				<div class="left">
+					<div class="comment-wrap-kuang">
+						<p class="date">2018-06-15 17:40:14</p>
+						<p class="reply">现在我获取到了一张表明，现在我要通过这张表名来获取所有字段名，并且把他们放到数组里面供我使用，该怎么做？</p>
+						<div class="comment-wrap-link">
+							<a class="comment-btn" href="javascript:;">回复(2)</a>
+						</div>
+					</div>
+					<div class="textarea dn">
+						<form action="">
+							<textarea id="topicReplyParent336" placeholder="写下你的评论..."></textarea>
+							<div class="submit-bar-1">
+								<a href="javascript:topicReplySynch('2',336,49);">发送</a>
+							</div>
+						</form>
+					</div>
+					
+					<!-- 跟评 -->
+					<div id="">
+						<div class="comment-wrap-sub clearfix">
+							<div class="sub-author">
+								<img class="avatar" src="/img/userinfo.png" alt="头像" />
+							</div>
+							<div class="sub-comment-wrap">
+								<p>DR1528860580</p>
+								<p>谢谢!!!!</p>
+							</div>
+						</div>
+					</div>
+					<!-- 跟评结束 -->
+					
+					
+					<!-- 跟评 -->
+					<div id="">
+						<div class="comment-wrap-sub clearfix">
+							<div class="sub-author">
+								<img class="avatar" src="/img/userinfo.png" alt="头像" />
+							</div>
+							<div class="sub-comment-wrap">
+								<p>DR1528860580</p>
+								<p>谢谢!!!!</p>
+							</div>
+						</div>
+					</div>
+					<!-- 跟评结束 -->
+					
+				</div>
+				<!-- 评论内容结束 -->
+			</div>
+			
+			
+			<div class="pagination tc">
+				<div class="pagination">
+					<span class="current prev">上一页</span>
+					<span class="current">1</span>
+					<a href="javascript:void(0)">2</a>
+					<a href="javascript:void(0)">3</a>
+					<a href="javascript:void(0)">4</a>
+					<a href="javascript:void(0)">5</a>
+					<a href="javascript:void(0)" class="next">下一页</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="rightC">
+			<div class="ask">我要提问</div>
+			<span>热门问答</span>
+			<div class="hot">
+				<span><i class="layui-icon" style="color:#E1EDF5;padding-right: 10px;">&#xe6b2;</i><a>多线程完全不会，先要和spring...</a></span>
+				<span><i class="layui-icon" style="color:#E1EDF5;padding-right: 10px;">&#xe6b2;</i><a>蚂蚁课堂-每特学员中，谁技术最...</a></span>
+				<span><i class="layui-icon" style="color:#E1EDF5;padding-right: 10px;">&#xe6b2;</i><a>现在SSM足以应付，将来的趋势...</a></span>
+				<span><i class="layui-icon" style="color:#E1EDF5;padding-right: 10px;">&#xe6b2;</i><a>传统非spring boot项目 如何接...</a></span>
+				<span><i class="layui-icon" style="color:#E1EDF5;padding-right: 10px;">&#xe6b2;</i><a>springboot的好处，简单说一下</a></span>
+				<span><i class="layui-icon" style="color:#E1EDF5;padding-right: 10px;">&#xe6b2;</i><a>activemq启动报错 于老师这个怎...</a></span>
+				<span><i class="layui-icon" style="color:#E1EDF5;padding-right: 10px;">&#xe6b2;</i><a>如何将ueditor的图片上传路径修改为...</a></span>
+				<span><i class="layui-icon" style="color:#E1EDF5;padding-right: 10px;">&#xe6b2;</i><a>有没有zookeeper，leaf6，doin...</a></span>
+				<span><i class="layui-icon" style="color:#E1EDF5;padding-right: 10px;">&#xe6b2;</i><a>多线程完全不会，先要和spring整合...</a></span>
+			</div>
+		</div>
+		
+	</div>
+	
+	
+	<!-- 引入底部页面 -->
+	#include("buttom.html")
+	<script type="text/javascript">
+		$(function(){
+			$(".comment-btn").on('click', function(){
+				var _this = $(this);
+				var _target = _this.closest(".comment-wrap-kuang").next(".textarea");
+
+				if(_target.is(':visible')){
+					_this.text("回复");
+					_target.hide();
+				}else{
+					$(".textarea").hide();
+					$(".sub-textarea").hide();
+					_this.text("收起");
+					_target.show();
+				}
+			})
+		})
+	</script>
+</body>
+</html>

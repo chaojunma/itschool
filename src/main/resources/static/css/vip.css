@@ -1,27 +1,26 @@
-.vip-line{
+.vip-line {
 	width: 1200px;
-	margin:0 auto;
-	height:80px;
-	padding-top:50px;
+	margin: 0 auto;
+	height: 80px;
+	padding-top: 50px;
 	font-weight: bold;
 }
 
-.vip-line .left{
+.vip-line .left {
 	width: 110px;
-	height:30px;
-	float:left;
-	border-bottom: 2px #55B928 solid;
+	height: 30px;
+	float: left;
+	border-bottom: 2px #84afe9 solid;
 }
 
-.vip-line .right{
+.vip-line .right {
 	width: 1090px;
-	height:30px;
-	float:left;
-	border-bottom: 2px #ddd solid;
+	height: 30px;
+	float: left;
+	border-bottom: 2px #e9f3fa solid;
 }
 
-
-.content{
+.content {
 	width: 1150px;
 	margin: 0 auto;
 	height: auto;
@@ -29,18 +28,17 @@
 	padding-top: 30px;
 }
 
-.content dt{
+.content dt {
 	font-weight: bold;
 	margin-top: 50px;
 }
 
-.content dd{
-	padding-top:20px;
+.content dd {
+	padding-top: 20px;
 	text-indent: 2em;
 }
 
-
-.buy{
+.buy {
 	width: 1200px;
 	margin: 0 auto;
 	margin-top: 100px;
@@ -48,9 +46,8 @@
 	margin-bottom: 100px;
 }
 
-
 /*版权部分*/
-.footer{
+.footer {
 	height: 140px;
 	padding-top: 1px;
 	margin-top: 30px;
