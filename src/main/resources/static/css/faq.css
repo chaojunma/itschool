@@ -28,7 +28,8 @@
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 40px;
-	background-color: #15B393;
+	/**background-color: #15B393;**/
+	background-color: #84afe9;
 	color: #fff;
 }
 
@@ -197,7 +198,7 @@
 
 .content span{
 	display:block;
-	height:20px;
+	height:30px;
 	width:300px;
 	line-height:20px;
 	font-size: 14px;
