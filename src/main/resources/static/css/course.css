@@ -1,69 +1,87 @@
-.content{
+.c-line {
 	width: 100%;
-	overflow: hidden;
+	border-top: 1px #e9f3fa solid;
+	margin-top: 30px;
 }
-.content-c{
-	width: 1200px;
-	overflow: hidden;
+
+.top {
 	margin: 0 auto;
-	overflow: hidden;
-}
-
-/*顶部课程信息*/
-.course-information{
 	width: 1200px;
-	background: red;
+	height: 450px;
 }
 
-.course-info-left{
+.top .left {
 	width: 600px;
-	height: 420px;
-	float: left;
-}
-.banner{
-	width: 600px;
-}
-.course-info-left p{
-	display: block;
-	height: 30px;
-	margin-top: 15px;
-	color: #999;
-	font-size: 14px;
-}
-.course-info-left p a{
-	display: block;
-	float: left;
-	margin-left: 15px;
-}
-
-.course-info-right{
-	width: 570px;
-	padding:15px;
-	padding-top: 0px;
 	height: 340px;
-	float: right;
-}
-.course-info-right h3{
-	font-size: 22px;
-	font-weight: normal;
-	margin-bottom: 10px;
-}
-.course-info-right span{
-	font-size: 14px;
-	color: #999;
-	display: block;
 	float: left;
-	margin-right: 30px;
-	margin-bottom: 30px;
+	height: auto;
+	margin-top: 60px;
+	background-color: #000;
+	position: relative;
+	float: left;
 }
-.class-info{
-	width: 550px;
-	border:1px solid #ccc;
+
+.left img {
+	width: 100%;
+	height: 340px;
+	opacity: 0.7;
+	filter: alpha(opacity = 30);
+}
+
+.left img:hover {
+	opacity: 0.95;
+}
+
+.left i {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-left: -15px;
+	margin-top: -15px;
+	background: rgba(0, 0, 0, .8) url(/img/play.png) no-repeat;
+	background-size: 15px 18px;
+	background-position: center center;
+	cursor: pointer;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+}
+
+.top .right {
+	width: 580px;
+	height: auto;
+	float: left;
+	margin-top: 60px;
+	margin-left: 20px;
+	border-left: 0px;
+}
+
+.right span {
+	display: inline-block;
+	padding: 5px 0;
+	min-width: 80px;
+}
+
+.class-info {
+	width: 100%;
+	border: 1.5px solid #E1EDF5;
 	clear: both;
 	position: relative;
 	padding: 15px;
+	margin-top: 30px;
+	line-height: 30px;
+	text-indent: 2em;
+	color: #999;
 }
-.class-info label{
+
+.class-info label {
+	text-indent: 0;
 	margin-top: -28px;
 	font-size: 16px;
 	font-weight: normal;
@@ -74,100 +92,97 @@
 	padding-right: 5px;
 	padding-left: 5px;
 	z-index: 200;
-}
-.class-info p{
-	display: block;
-	text-indent: 1em;
-}
-.price{
-	background: #f4f4f4;
-	width: 100%;
-	margin-top: 15px;
-	margin-bottom: 10px;
-	color: #e85308;
-	font-size: 26px;
-	padding: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	color: #84afe9;
 }
 
-.btn-group{
-	width: 100%;
+.price {
+	width: 60%;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 18px;
+	color: #999;
 }
-.btn2{
-	width: 150px;
-	height: 50px;
-	border-radius: 5px;
-	background: #188eee;
-	font-size: 16px;
+
+.buy {
+	width: 60%;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.buy a {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #84afe9;
+	padding: 0;
+	text-align: center;
 	color: #fff;
-	float: left;
-	font-weight: bold;
-}
-#btn:hover{
-	background: #147de2;
+	margin-right: 10px;
 }
 
-.btn-group ul li{
-	width: 150px;
-	height: 50px;
-	border-radius: 5px;
-	border:1px solid #147de2;
-	float: left;
-	margin-left: 10px;
-	line-height: 50px;
-	text-align: center;
-	color: #147de2;
-	cursor: pointer;
-}
-.btn-group ul li strong{
-	color: #147de2;
-}
-.btn-group ul li dl{
-	display: block;
-	height: 50px;
-	text-align: center;
-	width: 74px;
-	color: #147de2;
-	float: left;
-	display: none;
-}
-.btn-group ul li dl a{
-	font-weight: bold;
-	color: #188eee;
-}
-#bd{
-	border-right: 1px solid #147de2;
+.buy a:hover {
+	color: #fff;
 }
 
+.share {
+	display: inline-block;
+	vertical-align: top;
+	width: 20px;
+	height: 20px;
+	background: url("/img/share-icon.png") no-repeat;
+	background-position: center center;
+	margin-right: 5px;
+}
 
+.collection {
+	display: inline-block;
+	vertical-align: middle;
+	background: url("/img/collection_ready.png") no-repeat;
+	background-position: center center;
+	margin-right: 5px;
+	background-size: 15px 12px;
+	width: 15px;
+	height: 12px;
+}
 
+.right .title {
+	font-size: 22px;
+	width: 100%;
+}
 
-
-/*课程概述 内容*/
-.over-view-warp{
+.over-view-warp {
 	width: 100%;
 	overflow: hidden;
-	background: #f4f4f4;
+	background: #F2FAFF;
 	padding-top: 30px;
+	padding-bottom: 100px;
 }
 
-.over-view-cont{
+.over-view-cont {
 	width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
+	margin-top: 30px;
 }
-.over-view-cont-left{
-	width: 830px;
+
+.over-view-cont-left {
+	width: 860px;
 	float: left;
 	padding: 15px;
 	background: #fff;
 	padding-top: 0px;
 }
-.tab-title{
+
+.tab-title {
 	width: 100%;
 }
-.tab-title ul li{
+
+.tab-title ul {
+	overflow: hidden;
+}
+
+.tab-title ul li {
 	display: block;
 	width: 150px;
 	height: 40px;
@@ -177,11 +192,12 @@
 	margin-bottom: 15px;
 	border-top: 5px solid #fff;
 }
-.tab-title ul li:first-child{
-	border-top: 5px solid #0087ff;
+
+.tab-title ul li:first-child {
+	border-top: 5px solid #84afe9;
 }
 
-.tab-title ul li a{
+.tab-title ul li a {
 	display: block;
 	width: 150px;
 	height: 40px;
@@ -189,178 +205,37 @@
 	float: left;
 	text-align: center;
 }
-.tab-bg{
-	border-top: 5px solid #0087ff;
+
+.tab-bg {
+	border-top: 5px solid #84afe9;
 }
-.teacher{
+
+.course_des {
 	width: 100%;
 	clear: both;
-	overflow: hidden;
-}
-.teacher h3{
-	font-weight: normal;
-	font-size: 14px;
-}
-.teacher-card{
-	width: 390px;
-	height: 100px;
-	float: left;
-	margin-top: 30px;
-	margin-left: 15px;
-}
-.teacher-img{
-	width: 100px;
-	height: 100px;
-	background: red;
-	border-radius: 50px;
-	overflow: hidden;
-	float: left;
-	margin-right: 20px;
-}
-.teacher-img img{
-	width: 100%;
-	height: 100%;
-}
-
-.teacher-info span a{
-	color: #0087ff;
-	display: block;
-	margin-bottom: 10px;
-
-}
-.teacher-info p{
-	max-height: 80px;
-	overflow: hidden;
-	width: 270px;
-	font-size: 14px;
-	display: block;
-	float: right;
-	text-overflow:ellipsis;
-}
-
-.course-introduction{
-	width: 100%;
-	margin-top: 60px;
-	overflow: hidden;
-}
-
-/*下载专区*/
-.download{
-	margin-top: 30px;
-	overflow: hidden;
-}
-.download-tit{
-	font-size: 16px;
-}
-.download-tit span{
+	min-height: 350px;
+	padding: 30px;
+	line-height: 25px;
+	text-indent: 2em;
 	color: #999;
-	margin-left: 15px;
-	font-size: 14px;
-}
-.download-link{
-	overflow: hidden;
-}
-.download ul li {
-	display: block;
-	width: 220px;
-	float: left;
-	margin-right: 56px;
-	margin-top: 15px; 
-}
-.download ul li a{
-	display: block;
-	float: left;
-	width: 200px;
-	height: 20px;
-	padding-right: 30px;
-	overflow: hidden;
-	font-size: 14px;
-	background: url(../img/download.png) right center no-repeat;
-}
-.download ul li img{
-	margin-left: 15px;
 }
 
-.more{
-	width: 100%;
-	clear: both;
-	height: 20px;
-	text-align: center;
-	margin-top: 20px;
-	border-top: 1px solid #ccc;
-	position: relative;
-}
-.more  a{
-	position: absolute;
-	margin-top: -10px;
-	width: 60px;
-	margin-left: -30px;
-	display: block;
-	font-size: 14px;
-	left: 50%;
-	background: url(../img/bb.png) right center no-repeat;
-	background-color: #fff;
-
-}
-
-.download-link-hide{
-	overflow: hidden;
-	display: none;
-}
 /*选项卡2*/
-#tab2,#tab3{
+#tab2, #tab3 {
 	display: none;
 }
-.tab-box{
-	background: #f4f4f4;
+
+.tab-box {
 	clear: both;
-	overflow: hidden;
+	min-height: 350px;
 	margin-top: 30px;
 }
 
-.start {
-	float: right;
-	width: 650px;
-	margin-top: 5px;
-	height: 30px;
-	line-height: 30px;
-}
-.class-name{
-	float: left;
-	padding-right: 15px;
-	border-right: 1px solid #ccc;
-	margin-top: 5px;
-	margin-left: 15px;
-}
-#start{
-	display: block;
-	float: left;
-	font-size: 14px;
-	font-weight: normal;
-	height: 20px;
-}
-#end{
-	display: block;
-	float: right;
-	font-size: 14px;
-	height: 20px;
-
-}
-.progressbar{
-	width: 400px;
-	height: 10px;
-	float: left;
-	border-radius: 10px;
-	margin-top: 6px;
-	margin-left: 6px;
-	margin-right: 6px;
-	background: #ccc;
+.course-name {
+	
 }
 
-.course-name{
-
-}
-.course-name span{
+.course-name span {
 	width: 100px;
 	height: 40px;
 	line-height: 40px;
@@ -369,7 +244,8 @@
 	float: left;
 	font-size: 16px;
 }
-.course-name p{
+
+.course-name p {
 	display: block;
 	float: left;
 	height: 40px;
@@ -377,271 +253,242 @@
 	text-indent: 2em;
 	font-size: 14px;
 }
-.course{
+
+.course-name a {
+	color: #999;
+}
+
+.course {
 	width: 100%;
 	clear: both;
 	font-size: 14px;
 	text-indent: 4em;
 	background: #fff;
-	padding:5px;
+	padding: 5px;
 }
-.course ul li{
+
+.course ul li {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	line-height: 30px;
 }
-
-
 
 /*选项卡3*/
-.comment{
-	padding: 5px;
-	background: #f4f4f4;
-	border: 1px solid #ddd;
-	clear: both;
-	line-height: 40px;
-	overflow: hidden;
-}
-
-.comment ul li{
-	display: block;
-	float: left;
-	text-align: center;
-	margin-right: 15px;
-}
-.exc{
-	line-height: 20px;
-	width: 150px;
-	border-right: 1px solid #ccc;
-}
-.exc span{
-	font-size: 26px;
-	color: #e85308;
-}
-.exc p{
-	font-size: 14px;
-}
-
-.user-comment{
-	width: 100%;
-	clear: both;
-	overflow: hidden;
-	margin-top: 15px;
-	border-top:1px solid #eee;
-	padding-top: 15px;
-}
-.user-comment-left{
-	width: 50px;
-	height: 50px;
-	background: red;
-	overflow: hidden;
-	float: left;
-	border-radius: 50px;
-	margin-left: 25px;
-}
-.user-comment-left img{
-	width: 50px;
-	height: 50px;
-}
-.user-comment-right{
-	width: 730px;
-	float: right;
-}
-
-.comment-info{
+.comment {
 	width: 100%;
 	overflow: hidden;
-	font-size: 14px;
+	padding-top: 30px;
 }
-.comment-time{
-	font-size: 14px;
-	color: #aaa;
-	margin-top: 15px;
-}
-.add-comment{
+
+.comment .tit {
 	width: 100%;
-	margin-top: 15px;
-	font-size: 14px;
-	padding-top: 15px;
-	border-top: 1px dashed #ccc;
+	font-size: 20px;
+	padding: 20px 0;
+	border-bottom: 1px solid #e9f3fa;
+	margin-bottom: 30px;
 }
 
-
-
-
-/*右侧内容*/
-.over-view-cont-right{
-	width: 300px;
-	float: right;
-}
-.about{
-	background: #fff;
-	padding: 15px;
-	overflow: hidden;
-}
-.about h3{
-	font-weight: normal;
-	font-size: 16px;
-	margin-bottom: 15px;
-}
-.about img{
+.comment .auth {
 	width: 90px;
-	height: 50px;
-	float: left;
+	height: 90px;
+	margin-top: 20px;
 }
-.info-right{
-	overflow: hidden;
-	width: 170px;
-	float: right;
-}
-.info-right a{
-	width: 170px;
-	display: block;
-	overflow: hidden;
-	height: 40px;
-	font-size: 14px;
-}
-.info-right span{
-	float: left;
-	font-size: 14px;
-	color: green;
-}
-.info-right strong{
-	float: right;
-	font-size: 14px;
+
+.auth p {
 	color: #999;
-	font-weight: normal;
+	padding-left: 5px;
+	padding-top: 5px;
 }
 
-/*机构信息*/
-.agency{
-	width: 100%;
-	overflow: hidden;
-	background: #fff;
-	padding: 15px;
-	margin-top: 15px;
-}
-.agency-top{
-	height: 70px;
-}
-.agency-top a{
-	color: #0087ff;
-}
-.agency-top img{
-	width: 70px;
-	height: 70px;
-	float: left;
-}
-.agency-top p{
-	width: 200px;
-	display: block;
-	float: left;
-	margin-top: 5px;
-	margin-left: 15px;
-
-}
-.agency-top p img{
-	width: 69px;
-	height: 25px;
-}
-
-
-/*好评度*/
-.agency-midd{
+.auth img {
+	width: 60px;
 	height: 60px;
+	border: 1px solid #E1EDF5;
+	border-radius: 50%;
 }
-.agency-midd ul li{
-	display: block;
+
+.comment .left {
 	float: left;
-	font-size: 14px;
-	width: 90px;
-	text-align: center;
-}
-.agency-midd ul li span{
-	color: #888;
 }
 
+.comment-wrap-kuang {
+	width: 700px;
+	border: 1px solid #e1edf5;
+	position: relative;
+	padding: 10px 120px 10px 20px;
+	border-radius: 8px;
+	position: relative;
+}
 
+.comment-wrap-kuang p {
+	line-height: 24px;
+	color: #999;
+	width: 594px;
+	margin: 10px 0;
+}
 
-
-.agency-info{
-	width: 270px;
-	font-size: 14px;
-	line-height: 25px;
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 15px;
+.comment-wrap-kuang .reply {
+	padding: 0 20px;
 	text-indent: 2em;
 }
 
-/*入群沟通*/
-.agency-chat{
-	margin-top: 30px;
+.comment-wrap-link {
+	text-align: right;
+	padding-right: 20px;
+	margin-top: 10px;
+	position: absolute;
+	right: 0px;
+	bottom: 10px;
 }
-.agency-chat h4{
-	font-weight: normal;
-	font-size: 16px;
-	margin-bottom: 10px;
+
+.comment .textarea {
+	width: 700px;
+	background-color: #E1EDF5;
+	position: relative;
+	margin-top: 10px;
 }
-.agency-chat p{
-	width: 270px;
-	display: block;
-	float: left;
+
+.comment textarea {
+	padding: 10px 15px;
+	width: 700px;
+	height: 110px;
+	font-size: 13px;
+	border: none;
+	background-color: #E1EDF5;
+	resize: none;
+	display: inline-block;
+	vertical-align: top;
+	outline-style: none;
+}
+
+.dn {
+	display: none;
+}
+
+.textarea a {
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
 	font-size: 14px;
-	margin-bottom: 5px;
+	border: none;
+	border-radius: 20px;
+	color: #fff !important;
+	background-color: #84afe9;
+	outline: none;
+	display: block;
 }
-.agency-chat p span{
-	margin-left: 25px;
-	color: #777;
+
+.textarea .submit-bar-1 {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
 }
 
+.clearfix {
+	zoom: 1;
+}
 
+.comment-wrap-sub {
+	width: 700px;
+	position: relative;
+	padding: 10px 20px 0;
+	position: relative;
+	border-bottom: 1px solid #e2eef6;
+	padding-bottom: 20px;
+}
 
+.comment-wrap-sub .sub-author {
+	float: left;
+	display: inline;
+	border: 1px solid #E1EDF5;
+	border-radius: 50%;
+}
 
-/*老师推荐*/
-.recommend{
+.sub-author img {
+	width: 44px;
+	height: 44px;
+}
+
+.comment-wrap-sub .sub-comment-wrap {
+	float: left;
+	display: inline;
+	margin-left: 10px;
+}
+
+.sub-comment-wrap p {
+	color: #999;
+}
+
+.tc {
 	width: 100%;
-	background: #f4f4f4;
-	padding-top: 1px;
-}
-.recommend-c{
-	width: 1200px;
-	height: 260px;
 	margin: 0 auto;
-	margin-top: 60px;
-}
-.recommend-c h3{
-	font-weight: normal;
-	font-size: 16px;
-	margin-bottom: 20px;
 }
 
-.course-group{
-	width: 100%;
+.over-view-cont-right {
+	float: right;
+	width: 300px;
 	overflow: hidden;
 }
 
-
-.move-nav{
-	width: 1200px;
-	height: 30px;
-	background: red;
+.author_photo {
+	width: 300px;
+	background-color: #fff;
+	text-align: center;
+	overflow: hidden;
 }
 
-
-
-
-
-#btn2{
-	display: none;
-}
-#btn2:hover{
-	background: #0087ff;
-}
-
-
-
-.footer{
-	height: 150px;
-	padding-top: 20px;
+.author_photo img {
 	margin-top: 30px;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #E1EDF5;
+	border-radius: 50%;
+}
+
+.author_photo .name {
+	padding-top: 10px;
+	color: #84afe9;
+	margin-bottom: 10px;
+}
+
+.author_photo .desc {
+	color: #999;
+	text-align: left;
+	padding: 20px;
+	line-height: 25px;
+	text-indent: 2em;
+	border-top: 1.5px solid #E1EDF5;
+	margin-top: 10px;
+}
+
+
+.donation{
+	width: 300px;
+	background-color: #fff;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.donation p{
+	font-size: 18px;
+	color: #999;
+	padding-top: 10px;
+}
+
+.donation img {
+	width: 220px;
+	height: 220px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+
+/*版权部分*/
+.footer{
+	width:100%;
+	height: 140px;
+	padding-top: 1px;
 	clear: both;
 }
