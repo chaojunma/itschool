@@ -178,8 +178,9 @@
 	font-size: 22px;
 	margin-top: 60px;
 	border-bottom:1px solid #e9f3fa;
-	font-weight: lighter;
+	font-weight: normal;
 	padding-bottom: 20px;
+	color:#999;
 }
 
 
