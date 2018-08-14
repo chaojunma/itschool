@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/css/ucenter.css">
+<script src="/js/jquery.js"></script>
+<title>账户信息</title>
+</head>
+<body>
+	<!-- 账户信息 -->
+	<div class="info-about _account myInfo active">
+		<div class="info-header">
+			<dl>
+				<dd class="fl prz">
+					<img src="img/ly-icon07.png"
+						data-scale="best-fit-down" class="user-img">
+				</dd>
+				<dt class="fl fnt_16">账户信息</dt>
+			</dl>
+			<p class="fr header-r cleargap">
+				<a href="javascript:;" class="ibox fnt_16 style-verti">编辑</a> <img
+					src="img/slide-down.png" class="ibox style-verti">
+			</p>
+		</div>
+		<div class="myAccount mt_20">
+			<dl class="info-item">
+				<dt class="fnt_16 fl">账 户：</dt>
+				<dd class="fnt_16 fl">maming@300.cn</dd>
+			</dl>
+			<dl class="mt_20 info-item">
+				<dt class="fnt_16 fl">注册时间：</dt>
+				<dd class="fnt_16 fl">2017年11月25日</dd>
+			</dl>
+		</div>
+		<div class="info-list fl">
+
+			<dl class="clearfix info-item info-txt info-email">
+				<dt class="fnt_16 fl">邮 箱：</dt>
+				<dd class="fnt_16  info-filled">maming@300.cn</dd>
+				<dd class="info-input fl">
+					<input type="text" class="fnt_16" disabled="disabled">
+				</dd>
+			</dl>
+
+			<dl class="clearfix info-item info-txt info-phone">
+				<dt class="fnt_16 fl">手机号：</dt>
+				<dd class="fnt_16  info-filled">13161617105</dd>
+				<dd class="info-input fl">
+					<input type="text" class="fnt_16" disabled="disabled">
+				</dd>
+			</dl>
+
+			<dl class="clearfix info-item info-txt info-nick">
+				<dt class="fnt_16 fl">昵 称：</dt>
+				<dd class="fnt_16  info-filled">DR12345666</dd>
+				<dd class="info-input fl">
+					<input type="text" class="fnt_16">
+				</dd>
+			</dl>
+
+			<dl class="clearfix mt_20 info-item info-pic">
+				<dt class="fnt_16 fl">头像设置：</dt>
+				<dd class="fnt_16 fl prz pic-box active" id="picBox">
+					<span>我的头像</span> <img class="photo-set" src="/img/ly-test01.jpg"
+						data-scale="best-fill">
+				</dd>
+				<dd class="fl info-picList">
+					<ul class="clearfix">
+						<li class="fl prz"><img src="img/ly-test-pic01.jpg"> <span
+							class="pic-choose pra"></span></li>
+						<li class="fl ml_10 prz"><img src="img/ly-test-pic02.jpg">
+							<span class="pic-choose pra"></span></li>
+						<li class="fl ml_10 prz"><img src="img/ly-test-pic03.jpg">
+							<span class="pic-choose pra"></span></li>
+						<li class="fl ml_10 prz"><img src="img/ly-test-pic04.jpg">
+							<span class="pic-choose pra"></span></li>
+						<li class="fl mt_10 prz"><img src="img/ly-test-pic05.jpg">
+							<span class="pic-choose pra"></span></li>
+						<li class="fl ml_10 mt_10 prz"><img
+							src="img/ly-test-pic06.jpg"> <span class="pic-choose pra"></span></li>
+						<li class="fl ml_10 mt_10 prz"><img
+							src="img/ly-test-pic07.jpg"> <span class="pic-choose pra"></span></li>
+						<li class="fl ml_10 mt_10 pic-add prz"><input type="file"
+							class="pra" title="请选择上传文件" id="upload"> <img
+							src="img/ly-pic-add.jpg"></li>
+					</ul>
+				</dd>
+			</dl>
+
+			</dl>
+		</div>
+	</div>
+
+
+	<!-- 实名认证 -->
+	<div class="info-about mt_20 _certi myInfo active fl">
+		<div class="info-header">
+			<dl>
+				<dd class="fl prz">
+					<img src="img/ly-icon09.png" class="shiming"
+						data-scale="best-fit-down">
+				</dd>
+				<dt class="fl fnt_16">实名认证</dt>
+			</dl>
+			<p class="fr header-r cleargap">
+				<a href="javascript:;" class="ibox fnt_16 style-verti">编辑</a> <img
+					src="img/slide-down.png" class="ibox style-verti">
+			</p>
+		</div>
+
+		<div class="info-list">
+			<dl class="clearfix info-item info-txt info-chName">
+				<dt class="fnt_16 fl">真实姓名：</dt>
+				<dd class="fnt_16 fl info-filled">王俊杰</dd>
+				<dd class="info-input fl">
+					<input type="text" class="fnt_16">
+				</dd>
+				<dd class="info-tip fl">请先填写您的真实姓名</dd>
+			</dl>
+			<dl class="clearfix mt_20 info-item info-gender">
+				<dt class="fnt_16 fl">性 别：</dt>
+				<dd class="fnt_16 fl prz info-filled">男</dd>
+				<dd class="info-input fl">
+					<input type="radio" id="gender_m" name="gender"> <label
+						for="gender_m" class="cleargap"> <i
+						class="set-radio ibox prz style-verti"><span class="pra"></span></i>
+						<span class="_gender fnt_16 ibox style-verti">男</span>
+					</label>
+				</dd>
+				<dd class="info-input fl ml_20">
+					<input type="radio" id="gender_f" name="gender"> <label
+						for="gender_f" class="cleargap"> <i
+						class="set-radio ibox prz style-verti"><span class="pra"></span></i>
+						<span class="_gender fnt_16 ibox style-verti">女</span>
+					</label>
+				</dd>
+			</dl>
+		</div>
+	</div>
+
+
+<script type="text/javascript" src="js/image-scale.js"></script>
+<script type="text/javascript">
+	
+	var _json = {};
+	
+	$(function(){
+		
+		window.parent.setHeight(800);
+		
+		$('img.scale').imageScale();
+		
+		// 初始话数据
+		initData();
+		
+		// 性别点击效果
+		$('.info-gender').find('.info-input').each(function(){
+			var This = $(this);
+			This.find('input').on('change',function(){
+				if($(this).is(':checked')){
+					$(this).siblings('label').find('.set-radio').addClass('active');
+					This.siblings('.info-input').find('.set-radio').removeClass('active');
+				}
+			})
+		});
+		
+		
+		$('.info-about').each(function(index){
+			var This = $(this);
+	
+			This.find('.header-r').find('img').on('click',function(){
+				if(This.hasClass('active')){
+					This.removeClass('active');
+					This.find('.header-r').find('a').text('编辑');
+					This.find('.info-list').stop().slideUp(400,function(){
+						This.removeClass('on');
+					});
+					
+				}else{
+					This.addClass('active');
+					This.find('.info-list').stop().slideDown();
+				}
+		
+			});
+			
+			
+			
+			This.find('.header-r').find('a').on('click',function(){
+				if(This.hasClass('active')){
+					if(This.hasClass('on')){// 点击保存
+					} else { // 点击编辑
+						This.addClass('on');
+						$(this).text('保存');
+					}
+				} else {
+					This.addClass('active');
+					This.find('.info-list').stop().slideDown();
+				} 
+			});
+			
+		});
+	});
+	
+	
+	
+	/**
+	 * 获取当前值并显示在输入框中
+	 */
+	function getVal(key,el){
+		_json.key = el.find('.info-filled').text();
+		el.find('.info-input').find('input').val(_json.key)
+	}
+	
+	
+	function initData(){
+		//赋值昵称
+		var el_nick = $('.info-nick');
+		getVal('nickname',el_nick);
+		
+		//赋值昵称
+		var el_nick = $('.info-nick');
+		getVal('nickname',el_nick);
+		
+		//赋值邮箱
+		var el_email = $('.info-email');
+		getVal('email',el_email);
+		
+		//赋值邮箱
+		var el_phone = $('.info-phone');
+		getVal('phone',el_phone);
+		
+		//赋值真实姓名
+		var el_chName = $('.info-chName');
+		getVal('chName',el_chName);
+		
+		
+		//头像
+		if($('#picBox').hasClass('active')){
+			var getSrc = $('#picBox').find('img').attr('src');
+			_json.picSrc = "/img/ly-test01.jpg";
+		}
+		
+		
+		//性别
+		_json.gender = 	$('.info-gender').find('.info-filled').text();
+		$('.info-gender').find('.info-input').each(function(){
+			var get_gender = $(this).find('._gender').text();
+			if(get_gender == _json.gender){
+				$(this).find('input').attr('checked',true);
+				$(this).find('label').find('.set-radio').addClass('active')
+			}
+		});
+	}
+
+</script>
+</body>
+</html>
