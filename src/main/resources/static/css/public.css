@@ -153,9 +153,9 @@ input[type=checkbox]:checked::after{
 input[type=button]{
 	cursor: pointer;
 }
-input[type=button]:hover{
+/* input[type=button]:hover{
 	background: #f1f1f1;
-}
+} */
 
 
 

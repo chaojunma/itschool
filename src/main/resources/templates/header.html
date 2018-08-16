@@ -52,7 +52,7 @@
 					<label class="layui-form-label" style="padding-left: 50px;color:#ccc">
 						还没有账号？
 						<span><a href="javascript:regit();" style="color:#FF6C00">立即注册</a></span>
-						<span style="margin-left:50px;color:#84afe9">忘记密码？</span>
+						<span style="margin-left:50px;color:#84afe9"><a href="javascript:forgot();">忘记密码？</a></span>
 					</label>
 				</div>
 			</div>
@@ -157,6 +157,12 @@
 	 	 		 $("#regit").hide();
 			}
 		});
+	}
+	
+	
+	function forgot(){
+		layer.close(layer.index);
+		window.location.href="/checkEmail";
 	}
 </script>
 </body>

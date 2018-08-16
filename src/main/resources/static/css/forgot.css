@@ -1,0 +1,267 @@
+@CHARSET "UTF-8";
+
+/*slider-box*/
+.slider-box {
+	position: relative;
+	background: #f2faff;
+	padding: 70px 0;
+	margin-top: 30px;
+	height: 600px;
+}
+
+.forgot-layout {
+	background: white;
+	width: 900px;
+	margin: 0 auto;
+}
+
+.forgot-title {
+	color: #8dafe4;
+	font-size: 24px;
+	height: 64px;
+	line-height: 64px;
+	border-bottom: 1px solid #ebebeb;
+	text-align: center;
+}
+
+.flow {
+	width: 100%;
+	margin: 30px auto;
+	height: 50px;
+	padding: 20px 0 0 0;
+	position: relative;
+}
+
+.flowList {
+	float: left;
+	height: 1px;
+	border: 2px solid #f2faff;
+	background: #f2faff;
+}
+
+.flowListBox {
+	width: 536px;
+	margin: 0 auto;
+}
+
+.flowListBox .flowList {
+	float: left;
+	text-align: right;
+	position: relative;
+	width: 128px;
+}
+
+.first {
+	margin-left: 75px;
+}
+
+.flowListBox .flowList em {
+	margin-top: -16px;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 28px;
+	font-style: normal;
+	vertical-align: middle;
+	color: #666;
+	border: 3px solid #f2faff;
+	background: white;
+}
+
+.flowListBox .flowList strong {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	font-weight: 400;
+	position: absolute;
+	left: 28%
+}
+
+.flowListBox .flowList strong.last {
+	left: 40%
+}
+
+.flowListBox .for-cur strong {
+	color: #8dafe4;
+}
+
+.flowListBox .for-cur {
+	border: 2px solid #8dafe4;
+	background-color: #8dafe4;
+}
+
+.flowListBox em {
+	position: absolute;
+	left: 35%;
+}
+
+.flowListBox em.icon-right {
+	position: absolute;
+	left: 35%;
+	background: white url("/img/icon-right.png") center center no-repeat;
+}
+
+.flowListBox .for-cur em.icon-right {
+	position: absolute;
+	left: 35%;
+	background: white url("/img/icon-right-on.png") center center no-repeat;
+}
+
+.forgot-forward {
+	padding: 80px 0;
+	text-align: center;
+}
+
+.forgot-forward a {
+	display: block;
+	width: 350px;
+	height: 50px;
+	border: 1px solid #eee;
+	background: white;
+	text-align: center;
+	font-size: 18px;
+	color: black;
+	line-height: 50px;
+	border-radius: 8px;
+	margin: 20px auto;
+}
+
+.forgot-forward a:hover {
+	color: #8dafe4;
+	border: 1px solid #8dafe4;
+}
+
+.flowListBox .for-cur em {
+	width: 32px;
+	height: 32px;
+	font-size: 12px;
+	line-height: 28px;
+	border: 3px solid #8dafe4;
+	color: #8dafe4;
+}
+
+.form-group-layout {
+	padding-bottom: 50px;
+	margin-top: 50px;
+}
+
+.form-group {
+	width: 360px;
+	height: 40px;
+	margin: 50px auto;
+	position: relative;
+	text-align: center;
+}
+
+.form-group input.text {
+	border: 1px solid #eee;
+	height: 38px;
+	border-radius: 5px;
+	text-indent: 10px;
+}
+
+.form-group-percent input.text {
+	width: 100%;
+}
+
+.form-group-200px input.text {
+	width: 200px;
+}
+
+.form-group span {
+	position: absolute;
+	top: 10px;
+	font-size: 14px;
+	color: black;
+}
+
+.form-group span.f4 {
+	left: -70px;
+}
+
+.form-group span.f3 {
+	left: -56px;
+}
+
+.form-group span.f2 {
+	left: -42px;
+}
+
+.get-V-code {
+	background: #7dd8bd;
+	width: 143px;
+	height: 40px;
+	border-radius: 8px;
+	margin-left: 10px;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	border: none;
+}
+
+@
+keyframes btn-V-hover {
+	from {background: #7dd8bd;
+}
+
+to {
+	background: #56c0a0;
+}
+
+}
+.get-V-code:hover {
+	animation: btn-V-hover .5s linear;
+	animation-fill-mode: forwards;
+}
+
+.submit {
+	background: #8dafe4;
+	width: 100%;
+	height: 40px;
+	border-radius: 8px;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	border: none;
+}
+
+@
+keyframes btn-submit {
+	from {background: #8dafe4;
+}
+
+to {
+	background: #648dcd;
+}
+
+}
+.submit:hover {
+	animation: btn-submit .5s linear;
+	animation-fill-mode: forwards;
+}
+
+.err-msg {
+	position: absolute;
+	left: 370px;
+	top: 10px;
+	color: red;
+	width: 200px;
+}
+
+.finished-layout {
+	background: url("/img/finished.png") center 20% no-repeat;
+	color: #7dd8bd;
+	font-size: 24px;
+	text-align: center;
+	padding: 100px;
+	line-height: 80px;
+	padding-bottom: 0;
+}
+
+#Jsubmit {
+	width: 200px;
+}
